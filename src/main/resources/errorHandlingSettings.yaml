@@ -1,0 +1,4 @@
+conflict-result-method:
+  autoRetry: item1, item2, item3
+  terminate: item4, item5
+  skip: item6, item7

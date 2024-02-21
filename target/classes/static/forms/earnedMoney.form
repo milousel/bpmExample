@@ -1,0 +1,29 @@
+{
+  "components": [
+    {
+      "label": "Earned money",
+      "type": "number",
+      "layout": {
+        "row": "Row_11oke76",
+        "columns": null
+      },
+      "id": "Field_0iity9b",
+      "key": "earnedMoney",
+      "description": "how much we earned on the goods",
+      "validate": {
+        "required": true,
+        "min": 1
+      },
+      "defaultValue": 1
+    }
+  ],
+  "type": "default",
+  "id": "Form_0386oin",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.16.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 11
+}

@@ -1,0 +1,57 @@
+{
+  "components": [
+    {
+      "label": "Budget",
+      "type": "number",
+      "layout": {
+        "row": "Row_0ohy594",
+        "columns": null
+      },
+      "id": "Field_10rl4is",
+      "key": "budget",
+      "description": "How much cash do you have right now?",
+      "validate": {
+        "required": true,
+        "min": 1
+      }
+    },
+    {
+      "label": "Rent cost",
+      "type": "number",
+      "layout": {
+        "row": "Row_00dymye",
+        "columns": null
+      },
+      "id": "Field_1fu0xvc",
+      "key": "rent",
+      "description": "How much your rent cost per month?",
+      "validate": {
+        "required": false,
+        "min": 20000
+      }
+    },
+    {
+      "label": "Goods price",
+      "type": "number",
+      "layout": {
+        "row": "Row_0x1t0rl",
+        "columns": null
+      },
+      "id": "Field_19goys0",
+      "key": "goodsPrice",
+      "description": "How much goods average price",
+      "validate": {
+        "min": 1
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0i2j3fl",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.16.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 11
+}

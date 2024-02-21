@@ -1,0 +1,66 @@
+camunda.bpm:
+  authorization:
+    enabled: true
+  admin-user:
+    id: admin
+    password: lejcek
+  database:
+    schema-update: true
+
+spring:
+  security:
+    user:
+      name: admin
+      password: lejcek
+  datasource:
+    url: jdbc:mysql://localhost:3306/camunda
+    username: admin
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  routing:
+    json:
+      key: json.
+    key: msg.
+  exchange:
+    name: bpm.topic
+  queue:
+    json:
+      name: bpm_json_quorum
+    name: bpm_quorum
+
+gpwebpay:
+  sign:
+    encoding: UTF-8
+    method: SHA1withRSA
+  privateKey:
+    path: /Users/lejce/Desktop/GitHub/certificates/gpwebpay-pvk.jceks
+    password: TestingPasSWoRD
+    alias: alias
+  publicKey:
+    path: /mnt/vol500/tmp/
+    alias: gpe.signing_test.pem
+  url: https://test.3dsecure.gpwebpay.com/unicredit/order.do
+  merchantNumber: 475297001
+  respUrl: https://claimcloud.cz/cs/
+
+qrCode:
+  width: 250
+  height: 250
+  path: /Users/lejce/Desktop/GitHub/qrCodes/
+
+scheduler:
+  processReferenceCallProcIncident-timer: 0 * * * * *
+externalFiles:
+  errHandlingConfig: /Users/lejce/Desktop/GitHub/errorHandlingSettings.yaml

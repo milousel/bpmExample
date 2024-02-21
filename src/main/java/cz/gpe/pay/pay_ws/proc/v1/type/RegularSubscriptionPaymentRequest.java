@@ -1,0 +1,422 @@
+
+package cz.gpe.pay.pay_ws.proc.v1.type;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for RegularSubscriptionPaymentRequest complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="RegularSubscriptionPaymentRequest"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;group ref="{http://gpe.cz/pay/pay-ws/proc/v1/type}recPaymentType2"/&gt;
+ *         &lt;element name="signature" type="{http://gpe.cz/pay/pay-ws/proc/v1/type}Signature"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "RegularSubscriptionPaymentRequest", propOrder = {
+    "messageId",
+    "provider",
+    "merchantNumber",
+    "paymentNumber",
+    "masterPaymentNumber",
+    "orderNumber",
+    "referenceNumber",
+    "subscriptionAmount",
+    "captureFlag",
+    "subMerchantData",
+    "cardHolderData",
+    "paymentInfo",
+    "shoppingCartInfo",
+    "altTerminalData",
+    "signature"
+})
+public class RegularSubscriptionPaymentRequest {
+
+    @XmlElement(required = true)
+    protected String messageId;
+    @XmlElement(required = true)
+    protected String provider;
+    @XmlElement(required = true)
+    protected String merchantNumber;
+    @XmlElement(required = true)
+    protected String paymentNumber;
+    @XmlElement(required = true)
+    protected String masterPaymentNumber;
+    protected String orderNumber;
+    protected String referenceNumber;
+    protected Long subscriptionAmount;
+    protected int captureFlag;
+    protected SubMerchantData subMerchantData;
+    protected CardHolderData cardHolderData;
+    protected PaymentInfo paymentInfo;
+    protected ShoppingCartInfo shoppingCartInfo;
+    protected AltTerminalData altTerminalData;
+    @XmlElement(required = true)
+    protected byte[] signature;
+
+    /**
+     * Gets the value of the messageId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMessageId() {
+        return messageId;
+    }
+
+    /**
+     * Sets the value of the messageId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMessageId(String value) {
+        this.messageId = value;
+    }
+
+    /**
+     * Gets the value of the provider property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getProvider() {
+        return provider;
+    }
+
+    /**
+     * Sets the value of the provider property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setProvider(String value) {
+        this.provider = value;
+    }
+
+    /**
+     * Gets the value of the merchantNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMerchantNumber() {
+        return merchantNumber;
+    }
+
+    /**
+     * Sets the value of the merchantNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMerchantNumber(String value) {
+        this.merchantNumber = value;
+    }
+
+    /**
+     * Gets the value of the paymentNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getPaymentNumber() {
+        return paymentNumber;
+    }
+
+    /**
+     * Sets the value of the paymentNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setPaymentNumber(String value) {
+        this.paymentNumber = value;
+    }
+
+    /**
+     * Gets the value of the masterPaymentNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMasterPaymentNumber() {
+        return masterPaymentNumber;
+    }
+
+    /**
+     * Sets the value of the masterPaymentNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMasterPaymentNumber(String value) {
+        this.masterPaymentNumber = value;
+    }
+
+    /**
+     * Gets the value of the orderNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getOrderNumber() {
+        return orderNumber;
+    }
+
+    /**
+     * Sets the value of the orderNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setOrderNumber(String value) {
+        this.orderNumber = value;
+    }
+
+    /**
+     * Gets the value of the referenceNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getReferenceNumber() {
+        return referenceNumber;
+    }
+
+    /**
+     * Sets the value of the referenceNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setReferenceNumber(String value) {
+        this.referenceNumber = value;
+    }
+
+    /**
+     * Gets the value of the subscriptionAmount property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
+     */
+    public Long getSubscriptionAmount() {
+        return subscriptionAmount;
+    }
+
+    /**
+     * Sets the value of the subscriptionAmount property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
+     */
+    public void setSubscriptionAmount(Long value) {
+        this.subscriptionAmount = value;
+    }
+
+    /**
+     * Gets the value of the captureFlag property.
+     * 
+     */
+    public int getCaptureFlag() {
+        return captureFlag;
+    }
+
+    /**
+     * Sets the value of the captureFlag property.
+     * 
+     */
+    public void setCaptureFlag(int value) {
+        this.captureFlag = value;
+    }
+
+    /**
+     * Gets the value of the subMerchantData property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link SubMerchantData }
+     *     
+     */
+    public SubMerchantData getSubMerchantData() {
+        return subMerchantData;
+    }
+
+    /**
+     * Sets the value of the subMerchantData property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link SubMerchantData }
+     *     
+     */
+    public void setSubMerchantData(SubMerchantData value) {
+        this.subMerchantData = value;
+    }
+
+    /**
+     * Gets the value of the cardHolderData property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CardHolderData }
+     *     
+     */
+    public CardHolderData getCardHolderData() {
+        return cardHolderData;
+    }
+
+    /**
+     * Sets the value of the cardHolderData property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CardHolderData }
+     *     
+     */
+    public void setCardHolderData(CardHolderData value) {
+        this.cardHolderData = value;
+    }
+
+    /**
+     * Gets the value of the paymentInfo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link PaymentInfo }
+     *     
+     */
+    public PaymentInfo getPaymentInfo() {
+        return paymentInfo;
+    }
+
+    /**
+     * Sets the value of the paymentInfo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link PaymentInfo }
+     *     
+     */
+    public void setPaymentInfo(PaymentInfo value) {
+        this.paymentInfo = value;
+    }
+
+    /**
+     * Gets the value of the shoppingCartInfo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ShoppingCartInfo }
+     *     
+     */
+    public ShoppingCartInfo getShoppingCartInfo() {
+        return shoppingCartInfo;
+    }
+
+    /**
+     * Sets the value of the shoppingCartInfo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ShoppingCartInfo }
+     *     
+     */
+    public void setShoppingCartInfo(ShoppingCartInfo value) {
+        this.shoppingCartInfo = value;
+    }
+
+    /**
+     * Gets the value of the altTerminalData property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link AltTerminalData }
+     *     
+     */
+    public AltTerminalData getAltTerminalData() {
+        return altTerminalData;
+    }
+
+    /**
+     * Sets the value of the altTerminalData property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AltTerminalData }
+     *     
+     */
+    public void setAltTerminalData(AltTerminalData value) {
+        this.altTerminalData = value;
+    }
+
+    /**
+     * Gets the value of the signature property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getSignature() {
+        return signature;
+    }
+
+    /**
+     * Sets the value of the signature property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setSignature(byte[] value) {
+        this.signature = value;
+    }
+
+}

@@ -1,0 +1,56 @@
+{
+  "components": [
+    {
+      "label": "First name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0y9fc3y",
+        "columns": null
+      },
+      "id": "Field_1l0srw8",
+      "key": "firstName",
+      "description": "First name of employee",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Last name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0p50yaf",
+        "columns": null
+      },
+      "id": "Field_0p03hzp",
+      "key": "lastName",
+      "description": "Last name of employee",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Salary",
+      "type": "number",
+      "layout": {
+        "row": "Row_0e8g9f4",
+        "columns": null
+      },
+      "id": "Field_1scrgcp",
+      "key": "salary",
+      "description": "Employee salary",
+      "validate": {
+        "required": true,
+        "min": 15000
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1udz83r",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.16.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 11
+}
